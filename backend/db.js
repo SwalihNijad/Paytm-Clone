@@ -1,6 +1,5 @@
 const mongoose = require("mongoose")
-mongoose.connect("mongodb+srv://swalihnijad123_db_user:NIJADMONGOOSE123@nijadprojects.oxu249d.mongodb.net/Trello")
-
+mongoose.connect();
 
 const userSchema = mongoose.Schema({
     Username :  {
@@ -15,7 +14,7 @@ const userSchema = mongoose.Schema({
     Password : {
         lowercase: true,
         minLength: 3,
-        maxLength: 30
+        maxLength: 3
     },
     firstName : {
         type: String,
